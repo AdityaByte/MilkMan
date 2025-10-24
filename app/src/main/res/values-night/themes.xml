@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.MilkMan" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary & Secondary brand colors -->
+        <item name="colorPrimary">@color/complement_dark_slate_blue</item>
+        <item name="colorPrimaryVariant">#ABA8A8</item>
+
+        <item name="colorOnBackground">@color/dark_gray_blue</item>
+        <item name="cardForegroundColor">@color/black</item>
+    </style>
+</resources>

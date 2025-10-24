@@ -1,0 +1,5 @@
+<resources>
+    <color name="card_bg">#121212</color>
+    <color name="card_primary_text">@color/white</color>
+    <color name="card_primary_text_varient">#BBBBBB</color>
+</resources>

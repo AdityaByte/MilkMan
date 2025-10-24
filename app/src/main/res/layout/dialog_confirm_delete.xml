@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/warning_text"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:paddingBottom="10dp"
+        android:textColor="?attr/colorPrimary"
+        android:layout_marginBottom="20dp"/>
+
+    <com.aditya.milkman.component.CustomInputField
+        android:id="@+id/dialog_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cif_inputType="text"
+        app:cif_hintText="@string/dialog_input_hint_text"/>
+
+</LinearLayout>

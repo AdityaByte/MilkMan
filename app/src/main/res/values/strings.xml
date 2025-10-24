@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MilkMan</string>
+    <string name="app_sub_title">Manage Milk Records with Ease</string>
+    <string name="login_text">Login</string>
+    <string name="signup_text">Don\'t have an account? SignUp</string>
+    <string name="username_hint_text">Username</string>
+    <string name="password_hint_text">Password</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_about">About</string>
+    <string name="back_btn_desc">Back Button</string>
+    <string name="create_btn_text">Create Data</string>
+    <string name="update_btn_text">Update</string>
+    <string name="delete_btn_text">Delete</string>
+    <string name="dialog_input_hint_text">Enter Person Name</string>
+    <string name="app_version">Version 1.0</string>
+    <string name="app_desc">MilkMan is an easy-to-use app that helps you order and manage milk deliveries efficiently. Track your deliveries, manage buyers, and make your milk business smoother.</string>
+    <string name="dev_name">Developed By Aditya Pawar</string>
+    <string name="dev_email">Email: cybergeek563@gmail.com</string>
+    <string name="add_new_record">Add New Record</string>
+</resources>

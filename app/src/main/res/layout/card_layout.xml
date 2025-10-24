@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/card_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Person Name -->
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/card_primary_text"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Person Address -->
+        <TextView
+            android:id="@+id/card_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/card_primary_text_varient"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/card_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Milk Wanted -->
+        <TextView
+            android:id="@+id/card_milk_wanted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/card_primary_text"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/card_address"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Starting Date -->
+        <TextView
+            android:id="@+id/card_starting_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/card_primary_text"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/card_address"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_btn_text"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/green"
+            app:cornerRadius="50dp"
+            app:iconPadding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/card_milk_wanted"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="4dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_btn_text"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/red"
+            app:cornerRadius="50dp"
+            app:iconPadding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/card_starting_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="4dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

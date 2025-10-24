@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/back"
+            tools:ignore="MissingConstraints"
+            android:background="@drawable/rounded_box"
+            android:padding="8dp"
+            android:onClick="goBack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/rounded_box">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_new_record"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="18dp"
+                android:textSize="25sp"
+                android:textColor="?attr/colorPrimary"
+                android:fontFamily="@font/poppins"
+                android:textFontWeight="800"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"/>
+
+            <com.aditya.milkman.component.CustomInputField
+                android:id="@+id/name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cif_hintText="Name"
+                app:cif_inputType="text"
+                app:cif_endIconMode="custom"
+                app:cif_endIconDrawable="@drawable/account"/>
+
+            <com.aditya.milkman.component.CustomInputField
+                android:id="@+id/address_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cif_hintText="Address"
+                app:cif_inputType="text"
+                app:cif_endIconMode="custom"
+                app:cif_endIconDrawable="@drawable/location"/>
+
+            <com.aditya.milkman.component.CustomInputField
+                android:id="@+id/litre_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cif_hintText="Milk Wanted"
+                app:cif_inputType="number"
+                app:cif_endIconMode="custom"
+                app:cif_endIconDrawable="@drawable/account"/>
+
+            <com.aditya.milkman.component.CustomInputField
+                android:id="@+id/date_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cif_hintText="Starting Date"
+                app:cif_inputType="date"
+                app:cif_endIconMode="custom"
+                app:cif_endIconDrawable="@drawable/calendar"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/create_data_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/create_btn_text"
+                android:paddingVertical="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                app:cornerRadius="10dp"
+                android:fontFamily="@font/poppins" />
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
